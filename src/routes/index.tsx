@@ -1,16 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-mentoria.jpg";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Scale, Sparkles, Trophy, Users, Quote, Check } from "lucide-react";
+import { ArrowRight, Scale, Sparkles, AlertTriangle, Zap, Check, X, Quote, Gift, Flame, Target } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mentoria Jurídica — Construa a Advocacia que Você Sempre Quis" },
-      { name: "description", content: "Mentoria de advocacia para profissionais que querem advogar com propósito, autoridade e resultado. Inscreva-se e dê o próximo passo." },
-      { property: "og:title", content: "Mentoria Jurídica — Advocacia com Propósito" },
-      { property: "og:description", content: "Programa de mentoria para advogados que querem crescer com estratégia e identidade." },
-      { property: "og:image", content: "/og.jpg" },
+      { title: "Perícia Médica Estratégica — Encontro ao Vivo para Advogados" },
+      { name: "description", content: "Aprenda a orientar seu cliente para a perícia médica e aumente suas chances reais de concessão nos benefícios por incapacidade. Encontro ao vivo." },
+      { property: "og:title", content: "Perícia Médica Estratégica — Encontro ao Vivo" },
+      { property: "og:description", content: "Pare de perder benefício antes mesmo da perícia acontecer. Encontro ao vivo para advogados previdenciaristas." },
     ],
   }),
   component: Landing,
@@ -24,9 +23,9 @@ function Landing() {
         <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
           <div className="flex items-center gap-2 font-display text-xl font-bold text-brand-ink">
             <Scale className="w-5 h-5 text-brand-emerald" />
-            Lex<span className="text-brand-clay">.</span>Mentoria
+            Perícia<span className="text-brand-clay">.</span>Estratégica
           </div>
-          <Button asChild variant="default" className="bg-brand-ink hover:bg-brand-emerald rounded-full px-6">
+          <Button asChild className="bg-brand-ink hover:bg-brand-emerald rounded-full px-6">
             <a href="#cta">Quero participar</a>
           </Button>
         </div>
@@ -41,250 +40,254 @@ function Landing() {
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-emerald/30 bg-brand-cream/60 backdrop-blur text-sm">
               <Sparkles className="w-4 h-4 text-brand-clay" />
-              <span className="font-mono text-xs uppercase tracking-widest">Turma 2026 — vagas limitadas</span>
+              <span className="font-mono text-xs uppercase tracking-widest">Encontro ao vivo · Vagas limitadas</span>
             </div>
-            <h1 className="font-display text-5xl md:text-7xl leading-[0.95] text-brand-ink">
-              A advocacia que <em className="text-brand-clay">você sente</em>,
-              <br />
-              <span className="text-brand-emerald">com a estratégia</span> que ela merece.
+            <h1 className="font-display text-4xl md:text-6xl leading-[1.02] text-brand-ink">
+              Se o seu cliente vai mal preparado para a perícia… <em className="text-brand-clay">você já perdeu o benefício</em> antes mesmo do resultado sair.
             </h1>
             <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
-              Uma mentoria desenhada para advogados que não querem caber em fórmulas prontas. Construa autoridade, posicionamento e um escritório que se parece com você — seja qual for sua área.
+              Aprenda como orientar seu cliente (e sua equipe) para a perícia médica e aumente suas chances reais de concessão nos benefícios por incapacidade.
             </p>
             <div className="flex flex-wrap gap-4 items-center">
               <Button asChild size="lg" className="bg-brand-emerald hover:bg-brand-ink rounded-full px-8 h-14 text-base shadow-[var(--shadow-elegant)]">
                 <a href="#cta">
-                  Garantir minha vaga <ArrowRight className="ml-2 w-5 h-5" />
+                  Quero participar do encontro <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
               </Button>
-              <div className="flex items-center gap-3 text-sm text-muted-foreground">
-                <div className="flex -space-x-2">
-                  {[0,1,2].map(i => (
-                    <div key={i} className="w-8 h-8 rounded-full border-2 border-background" style={{background: `var(--gradient-eclectic)`, opacity: 0.7 + i*0.1}} />
-                  ))}
-                </div>
-                +800 advogados mentorados
+              <div className="text-sm text-muted-foreground">
+                Apenas <span className="font-display text-brand-ink text-lg">R$ 59,90</span>
               </div>
             </div>
           </div>
 
-          {/* Hero collage */}
           <div className="relative">
             <div className="absolute -top-6 -left-6 w-32 h-32 rounded-2xl bg-brand-gold/40 -rotate-6" aria-hidden />
             <div className="absolute -bottom-6 -right-6 w-40 h-40 rounded-full bg-brand-emerald/30" aria-hidden />
-            <img
-              src={heroImg}
-              alt="Mentoria jurídica"
-              width={1024}
-              height={1024}
-              className="relative rounded-3xl shadow-[var(--shadow-elegant)] w-full"
-            />
-            <div className="absolute -bottom-8 -left-8 bg-brand-ink text-brand-cream rounded-2xl p-5 shadow-[var(--shadow-soft)] max-w-[220px]">
+            <img src={heroImg} alt="Advogada previdenciarista" width={1024} height={1024} className="relative rounded-3xl shadow-[var(--shadow-elegant)] w-full" />
+            <div className="absolute -bottom-8 -left-8 bg-brand-ink text-brand-cream rounded-2xl p-5 shadow-[var(--shadow-soft)] max-w-[240px]">
               <div className="font-mono text-[10px] uppercase tracking-widest text-brand-gold mb-1">Resultado real</div>
-              <div className="font-display text-2xl leading-tight">+340% em honorários no 1º semestre</div>
+              <div className="font-display text-xl leading-tight">Mais concessões nos benefícios por incapacidade</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* HEADLINE COPY */}
-      <section className="py-24 px-6 bg-secondary/10 border-t border-border">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-[1.4fr_1fr] gap-12 items-start">
-            <div className="space-y-6">
-              <p className="font-mono text-xs uppercase tracking-[0.32em] text-brand-clay">Headline (impacto)</p>
-              <h2 className="font-display text-4xl md:text-5xl leading-tight text-brand-ink">
-                Se o seu cliente vai mal preparado para a perícia… você já perdeu o benefício antes mesmo do resultado sair.
-              </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
-                Aprenda como orientar seu cliente (e sua equipe) para a perícia médica e aumente suas chances reais de concessão nos benefícios por incapacidade.
-              </p>
-              <Button asChild size="lg" className="bg-brand-emerald hover:bg-brand-ink rounded-full h-14 px-10">
-                <a href="#cta">Quero participar do encontro</a>
-              </Button>
-            </div>
-            <div className="space-y-6">
-              <div className="rounded-3xl border border-border bg-background p-8 shadow-[var(--shadow-soft)]">
-                <p className="font-semibold text-brand-ink mb-3">Quebra de realidade</p>
-                <p className="text-muted-foreground leading-relaxed">
-                  A maioria dos advogados previdenciaristas acredita que o problema está no perito. Mas a verdade é outra:
-                </p>
-                <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                  <li>👉 o cliente chega despreparado</li>
-                  <li>👉 fala o que não deveria</li>
-                  <li>👉 não apresenta corretamente a limitação</li>
-                  <li>👉 e o benefício é negado</li>
-                </ul>
-                <p className="mt-4 text-sm font-medium text-brand-ink">E o advogado… nem percebe onde errou.</p>
-              </div>
-              <div className="rounded-3xl border border-border bg-background p-8 shadow-[var(--shadow-soft)]">
-                <p className="font-semibold text-brand-ink mb-3">O que você vai aprender</p>
-                <ul className="space-y-3 text-sm text-muted-foreground">
-                  <li>✔️ Como preparar seu cliente para a perícia médica</li>
-                  <li>✔️ O que o cliente pode e não pode falar</li>
-                  <li>✔️ Como evitar erros que fazem o benefício ser negado</li>
-                  <li>✔️ Como conduzir o caso antes da perícia</li>
-                  <li>✔️ O que observar no comportamento do perito</li>
-                  <li>✔️ O que fazer após uma negativa</li>
-                  <li>✔️ Como aumentar sua taxa de concessão</li>
-                </ul>
-              </div>
-            </div>
+      {/* QUEBRA DE REALIDADE */}
+      <section className="py-24 px-6 bg-secondary/30 border-y border-border">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex items-center gap-3 mb-6">
+            <AlertTriangle className="w-6 h-6 text-brand-clay" />
+            <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-clay">Quebra de realidade</span>
           </div>
-          <div className="mt-12 grid md:grid-cols-2 gap-6">
-            <div className="rounded-3xl border border-border bg-background p-8 shadow-[var(--shadow-soft)]">
-              <h3 className="font-display text-2xl mb-4">Para quem é</h3>
-              <ul className="space-y-3 text-sm text-muted-foreground">
-                <li>• Advogados que atuam com benefícios por incapacidade</li>
-                <li>• Equipes que querem aumentar concessões</li>
-                <li>• Profissionais que querem parar de perder caso por erro simples</li>
-                <li>• Quem quer atuar com mais segurança e clareza</li>
-                <li>• Quem quer melhorar a orientação ao cliente</li>
-              </ul>
-            </div>
-            <div className="rounded-3xl border border-border bg-background p-8 shadow-[var(--shadow-soft)]">
-              <h3 className="font-display text-2xl mb-4">Para quem não é</h3>
-              <ul className="space-y-3 text-sm text-muted-foreground">
-                <li>• Quem quer teoria sem aplicação</li>
-                <li>• Quem não aplica o que aprende</li>
-                <li>• Quem acredita que perícia é sorte</li>
-              </ul>
-            </div>
-          </div>
-          <div className="mt-12 rounded-3xl border border-border bg-background p-8 shadow-[var(--shadow-soft)]">
-            <div className="grid gap-4 md:grid-cols-[0.9fr_1.1fr]">
-              <div>
-                <p className="font-display text-2xl mb-3">Diferencial</p>
-                <p className="text-muted-foreground leading-relaxed">
-                  Aqui você não vai ver teoria. Você vai entender como isso acontece na prática, como o advogado conduz o caso e o que realmente influencia o resultado.
-                </p>
-              </div>
-              <div>
-                <p className="font-display text-2xl mb-3">Oferta</p>
-                <p className="text-muted-foreground leading-relaxed">
-                  Encontro ao vivo por apenas R$ 59,90. Aula ao vivo, conteúdo técnico aplicado, estratégia prática e direcionamento claro.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="mt-12 rounded-3xl border border-border bg-background p-8 shadow-[var(--shadow-soft)]">
-            <p className="text-lg font-semibold text-brand-ink">Você não perde o benefício na perícia. Você perde antes dela… quando não sabe orientar o seu cliente.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* FOR WHO */}
-      <section className="py-24 px-6 bg-secondary/40 border-y border-border">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex items-end justify-between flex-wrap gap-6 mb-14">
-            <div>
-              <span className="font-mono text-xs uppercase tracking-widest text-brand-clay">Para quem é</span>
-              <h2 className="font-display text-4xl md:text-5xl mt-2 max-w-2xl">Vários caminhos. Uma mesma travessia.</h2>
-            </div>
-            <p className="text-muted-foreground max-w-md">Independente da fase — recém-formado, autônomo ou sócio de banca — a mentoria se adapta à sua advocacia.</p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <h2 className="font-display text-3xl md:text-5xl text-brand-ink leading-tight mb-8">
+            A maioria dos advogados previdenciaristas acredita que o problema está no perito. <em className="text-brand-emerald">Mas a verdade é outra.</em>
+          </h2>
+          <div className="grid md:grid-cols-2 gap-4">
             {[
-              { icon: Sparkles, tag: "01", title: "Recém-formado", desc: "Encontre sua área, posicione-se e capte os primeiros clientes sem se perder no caminho." },
-              { icon: Trophy, tag: "02", title: "Autônomo em transição", desc: "Saia do contencioso de subsistência e construa um escritório com identidade e previsibilidade." },
-              { icon: Users, tag: "03", title: "Sócio em escala", desc: "Estruture marca, processos e equipe sem perder o que torna seu trabalho único." },
-            ].map(({icon: Icon, tag, title, desc}, i) => (
-              <div key={i} className="group bg-card rounded-3xl p-8 border border-border hover:border-brand-emerald transition-all duration-500 hover:-translate-y-1 hover:shadow-[var(--shadow-soft)]">
-                <div className="flex items-center justify-between mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-brand-emerald/10 flex items-center justify-center group-hover:bg-brand-emerald group-hover:text-brand-cream transition-colors">
-                    <Icon className="w-5 h-5" />
-                  </div>
-                  <span className="font-mono text-xs text-muted-foreground">{tag}</span>
-                </div>
-                <h3 className="font-display text-2xl mb-3">{title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{desc}</p>
+              "O cliente chega despreparado",
+              "Fala o que não deveria",
+              "Não apresenta corretamente a limitação",
+              "E o benefício é negado",
+            ].map((t) => (
+              <div key={t} className="rounded-2xl border border-border bg-background p-6 flex gap-3">
+                <span className="text-brand-clay">→</span>
+                <p className="text-muted-foreground">{t}</p>
               </div>
             ))}
           </div>
+          <p className="mt-8 font-display text-2xl text-brand-ink">E o advogado… nem percebe onde errou.</p>
         </div>
       </section>
 
-      {/* PILLARS */}
+      {/* VIRADA */}
       <section className="py-24 px-6">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          <div className="relative aspect-square max-w-md">
-            <div className="absolute inset-0 rounded-full" style={{background: 'var(--gradient-eclectic)'}} />
-            <div className="absolute inset-8 rounded-full bg-background flex items-center justify-center">
-              <div className="text-center px-8">
-                <div className="font-mono text-xs uppercase tracking-widest text-brand-clay mb-2">Método</div>
-                <div className="font-display text-5xl text-brand-ink">4 pilares</div>
-                <div className="font-display text-5xl text-brand-emerald italic">12 semanas</div>
-              </div>
-            </div>
+        <div className="max-w-4xl mx-auto text-center">
+          <Zap className="w-10 h-10 text-brand-gold mx-auto mb-6" />
+          <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-clay">A virada</span>
+          <h2 className="font-display text-4xl md:text-6xl mt-4 leading-[1] text-brand-ink">
+            Perícia não é sorte. <br />
+            Perícia é <em className="text-brand-emerald">estratégia</em>.
+          </h2>
+          <p className="text-lg text-muted-foreground mt-8 max-w-2xl mx-auto">
+            E existe um jeito certo de orientar o cliente antes, durante e depois da perícia.
+          </p>
+        </div>
+      </section>
+
+      {/* O QUE VAI APRENDER */}
+      <section className="py-24 px-6 bg-brand-ink text-brand-cream relative overflow-hidden">
+        <div className="absolute top-10 right-10 w-64 h-64 rounded-full bg-brand-gold/10 blur-3xl" aria-hidden />
+        <div className="max-w-6xl mx-auto relative">
+          <div className="flex items-center gap-3 mb-6">
+            <Flame className="w-6 h-6 text-brand-gold" />
+            <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-gold">O que você vai aprender</span>
           </div>
-          <div className="space-y-8">
-            <h2 className="font-display text-4xl md:text-5xl">Um método que respeita a <em className="text-brand-clay">sua voz</em>.</h2>
+          <h2 className="font-display text-3xl md:text-5xl mb-12 max-w-3xl">Tudo que muda o resultado da perícia — antes, durante e depois.</h2>
+          <div className="grid md:grid-cols-2 gap-4">
             {[
-              { n: "01", t: "Posicionamento", d: "Defina nicho, narrativa e marca pessoal autêntica." },
-              { n: "02", t: "Captação", d: "Construa um funil ético e consistente de clientes." },
-              { n: "03", t: "Operação", d: "Processos, precificação e gestão para crescer com leveza." },
-              { n: "04", t: "Autoridade", d: "Conteúdo, presença e rede que abrem portas certas." },
-            ].map(p => (
-              <div key={p.n} className="flex gap-5 pb-6 border-b border-border last:border-0">
-                <div className="font-mono text-sm text-brand-clay pt-1">{p.n}</div>
-                <div>
-                  <h3 className="font-display text-2xl mb-1">{p.t}</h3>
-                  <p className="text-muted-foreground">{p.d}</p>
-                </div>
+              "Como preparar seu cliente para a perícia médica",
+              "O que o cliente pode e não pode falar",
+              "Como evitar erros que fazem o benefício ser negado",
+              "Como conduzir o caso antes da perícia",
+              "O que observar no comportamento do perito",
+              "O que fazer após uma negativa",
+              "Como aumentar sua taxa de concessão",
+            ].map((t) => (
+              <div key={t} className="flex gap-3 p-5 rounded-2xl border border-brand-cream/10 bg-brand-cream/5">
+                <Check className="w-5 h-5 text-brand-gold shrink-0 mt-0.5" />
+                <p>{t}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* TESTIMONIAL */}
-      <section className="py-24 px-6 bg-brand-ink text-brand-cream relative overflow-hidden">
-        <div className="absolute top-10 right-10 w-64 h-64 rounded-full bg-brand-gold/20 blur-3xl" aria-hidden />
-        <div className="max-w-4xl mx-auto relative">
-          <Quote className="w-12 h-12 text-brand-gold mb-8" />
-          <p className="font-display text-3xl md:text-4xl leading-snug italic">
-            "Eu cheguei achando que precisava ser <span className="text-brand-gold not-italic">outro advogado</span>. Saí com um escritório que finalmente parece comigo — e fatura três vezes mais."
-          </p>
-          <div className="mt-10 flex items-center gap-4">
-            <div className="w-14 h-14 rounded-full" style={{background: 'var(--gradient-eclectic)'}} />
-            <div>
-              <div className="font-display text-lg">Marina Veloso</div>
-              <div className="font-mono text-xs text-brand-gold/80 uppercase tracking-widest">Direito de Família · Recife</div>
+      {/* DIFERENCIAL */}
+      <section className="py-24 px-6">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-[auto_1fr] gap-10 items-start">
+          <div className="w-20 h-20 rounded-2xl bg-brand-clay/10 flex items-center justify-center">
+            <Target className="w-9 h-9 text-brand-clay" />
+          </div>
+          <div>
+            <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-clay">Diferencial</span>
+            <h2 className="font-display text-3xl md:text-5xl mt-3 mb-6 text-brand-ink">Aqui você não vai ver teoria.</h2>
+            <p className="text-lg text-muted-foreground mb-6">Você vai entender:</p>
+            <ul className="space-y-3 text-lg">
+              <li className="flex gap-3"><span className="text-brand-emerald">→</span> como isso acontece na prática</li>
+              <li className="flex gap-3"><span className="text-brand-emerald">→</span> como o advogado conduz o caso</li>
+              <li className="flex gap-3"><span className="text-brand-emerald">→</span> o que realmente influencia o resultado</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* PARA QUEM / NÃO É */}
+      <section className="py-24 px-6 bg-secondary/30 border-y border-border">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-6">
+          <div className="rounded-3xl bg-background border border-brand-emerald/30 p-8 shadow-[var(--shadow-soft)]">
+            <div className="flex items-center gap-2 mb-4">
+              <Scale className="w-5 h-5 text-brand-emerald" />
+              <span className="font-mono text-xs uppercase tracking-widest text-brand-emerald">Para quem é</span>
+            </div>
+            <h3 className="font-display text-2xl mb-6">Advogados e equipes que:</h3>
+            <ul className="space-y-3 text-muted-foreground">
+              {[
+                "Atuam com benefícios por incapacidade",
+                "Querem aumentar concessões",
+                "Querem parar de perder caso por erro simples",
+                "Querem atuar com mais segurança",
+                "Querem melhorar a orientação ao cliente",
+              ].map((t) => (
+                <li key={t} className="flex gap-3"><Check className="w-5 h-5 text-brand-emerald shrink-0 mt-0.5" />{t}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="rounded-3xl bg-background border border-border p-8 shadow-[var(--shadow-soft)]">
+            <div className="flex items-center gap-2 mb-4">
+              <X className="w-5 h-5 text-brand-clay" />
+              <span className="font-mono text-xs uppercase tracking-widest text-brand-clay">Para quem não é</span>
+            </div>
+            <h3 className="font-display text-2xl mb-6">Não é para quem:</h3>
+            <ul className="space-y-3 text-muted-foreground">
+              {[
+                "Quer teoria sem aplicação",
+                "Não aplica o que aprende",
+                "Acredita que perícia é sorte",
+              ].map((t) => (
+                <li key={t} className="flex gap-3"><X className="w-5 h-5 text-brand-clay shrink-0 mt-0.5" />{t}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* O QUE VOCÊ RECEBE */}
+      <section className="py-24 px-6">
+        <div className="max-w-5xl mx-auto">
+          <div className="flex items-center gap-3 mb-6">
+            <Gift className="w-6 h-6 text-brand-clay" />
+            <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-clay">O que você recebe</span>
+          </div>
+          <h2 className="font-display text-3xl md:text-5xl mb-12 text-brand-ink">Um encontro denso e direto ao ponto.</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {["Aula ao vivo", "Conteúdo técnico aplicado", "Estratégia prática", "Direcionamento claro"].map((t, i) => (
+              <div key={t} className="rounded-2xl border border-border bg-card p-6">
+                <div className="font-mono text-xs text-brand-clay mb-3">0{i+1}</div>
+                <p className="font-display text-xl text-brand-ink">{t}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PROVA SOCIAL */}
+      <section className="py-24 px-6 bg-secondary/30 border-y border-border">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center gap-3 mb-10">
+            <Quote className="w-6 h-6 text-brand-emerald" />
+            <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-emerald">Depoimentos</span>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              "Depois que comecei a orientar meus clientes da forma correta, minhas concessões aumentaram muito. Eu percebi que estava errando antes da perícia.",
+              "Eu achava que o problema era o INSS, mas entendi que a forma como o cliente chegava na perícia estava totalmente errada.",
+              "Só essa orientação já mudou minha forma de atuar nos casos de auxílio-doença.",
+              "Eu aplico exatamente o que aprendi e hoje me sinto muito mais segura nos atendimentos.",
+            ].map((q, i) => (
+              <div key={i} className="rounded-3xl bg-background border border-border p-8 shadow-[var(--shadow-soft)]">
+                <Quote className="w-8 h-8 text-brand-gold mb-4" />
+                <p className="font-display text-xl leading-snug text-brand-ink italic">"{q}"</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* QUEBRA DE OBJEÇÃO */}
+      <section className="py-24 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-clay">A escolha</span>
+          <h2 className="font-display text-3xl md:text-5xl mt-4 mb-10 text-brand-ink">Você pode continuar…</h2>
+          <div className="grid md:grid-cols-2 gap-6 text-left">
+            <div className="rounded-2xl border border-border p-6 bg-secondary/40">
+              <X className="w-6 h-6 text-brand-clay mb-3" />
+              <p className="text-muted-foreground">Deixando seu cliente ir despreparado</p>
+              <p className="text-muted-foreground mt-2">Perdendo benefício sem entender o motivo</p>
+            </div>
+            <div className="rounded-2xl border border-brand-emerald p-6 bg-brand-emerald/5">
+              <Check className="w-6 h-6 text-brand-emerald mb-3" />
+              <p className="text-brand-ink font-medium">Ou aprender como conduzir isso de forma estratégica.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section id="cta" className="py-32 px-6 relative">
+      <section id="cta" className="py-32 px-6 relative bg-brand-ink text-brand-cream">
+        <div className="absolute top-10 right-10 w-64 h-64 rounded-full bg-brand-gold/20 blur-3xl" aria-hidden />
         <div className="max-w-4xl mx-auto text-center relative">
-          <span className="font-mono text-xs uppercase tracking-[0.3em] text-brand-clay">Próxima turma · Março de 2026</span>
-          <h2 className="font-display text-5xl md:text-7xl mt-6 mb-8 leading-[0.95]">
-            Sua próxima década na advocacia <em className="text-brand-emerald">começa aqui</em>.
+          <span className="font-mono text-xs uppercase tracking-[0.3em] text-brand-gold">Encontro ao vivo · R$ 59,90</span>
+          <h2 className="font-display text-4xl md:text-6xl mt-6 mb-8 leading-[1]">
+            Quero garantir minha vaga <em className="text-brand-gold">no encontro</em>.
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10">
-            Faça sua inscrição agora. Você será levado para a página com todos os detalhes do investimento, bônus e formato.
+          <p className="text-lg text-brand-cream/80 max-w-2xl mx-auto mb-10">
+            Clique abaixo e veja todos os detalhes da inscrição.
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-3 mb-10 text-sm">
-            {["12 semanas de imersão", "Mentoria em grupo + individual", "Comunidade vitalícia"].map(t => (
-              <span key={t} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border">
-                <Check className="w-4 h-4 text-brand-emerald" /> {t}
-              </span>
-            ))}
-          </div>
-          <Button asChild size="lg" className="bg-brand-emerald hover:bg-brand-ink rounded-full h-16 px-12 text-lg shadow-[var(--shadow-elegant)]">
+          <Button asChild size="lg" className="bg-brand-gold hover:bg-brand-cream text-brand-ink rounded-full h-16 px-12 text-lg shadow-[var(--shadow-elegant)]">
             <Link to="/vendas">
-              Ver detalhes e investir <ArrowRight className="ml-2 w-5 h-5" />
+              Quero garantir minha vaga <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
           </Button>
-          <p className="mt-6 font-mono text-xs text-muted-foreground uppercase tracking-widest">Vagas limitadas · Acesso por seleção</p>
+          <p className="mt-12 font-display text-2xl md:text-3xl italic text-brand-gold max-w-3xl mx-auto leading-snug">
+            "Você não perde o benefício na perícia. Você perde antes dela… quando não sabe orientar o seu cliente."
+          </p>
         </div>
       </section>
 
       <footer className="py-10 px-6 border-t border-border">
         <div className="max-w-7xl mx-auto flex flex-wrap justify-between gap-4 text-sm text-muted-foreground">
-          <div>© 2026 Lex.Mentoria · Todos os direitos reservados</div>
-          <div className="font-mono text-xs uppercase tracking-widest">contato@lex.mentoria</div>
+          <div>© 2026 Perícia Estratégica · Todos os direitos reservados</div>
+          <div className="font-mono text-xs uppercase tracking-widest">contato@periciaestrategica.com</div>
         </div>
       </footer>
     </div>
