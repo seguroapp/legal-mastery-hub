@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
+import logoAcelera from "@/assets/logo-acelera.jpeg";
 import { ArrowLeft, ArrowRight, Check, X, Calendar, Flame, Zap, AlertTriangle, BookOpen, Scale } from "lucide-react";
 
 export const Route = createFileRoute("/vendas")({
@@ -18,9 +19,14 @@ function Vendas() {
       {/* NAV */}
       <header className="absolute top-0 left-0 right-0 z-30">
         <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
-          <Link to="/" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-brand-emerald">
-            <ArrowLeft className="w-4 h-4" /> Voltar
-          </Link>
+          <div className="flex items-center gap-4">
+            <Link to="/" className="flex items-center gap-3">
+              <img src={logoAcelera} alt="Acelera Previdenciarista" className="h-10 md:h-12 w-auto rounded-md" />
+            </Link>
+            <Link to="/" className="hidden sm:inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-brand-emerald">
+              <ArrowLeft className="w-4 h-4" /> Voltar
+            </Link>
+          </div>
           <Button asChild className="bg-brand-ink hover:bg-brand-emerald rounded-full px-6">
             <a href="#planos">Quero entrar no Clube</a>
           </Button>

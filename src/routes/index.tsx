@@ -1,7 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-mentoria.jpg";
+import logoAcelera from "@/assets/logo-acelera.jpeg";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Scale, Sparkles, AlertTriangle, Zap, Check, X, Quote, Gift, Flame, Target } from "lucide-react";
+import { ArrowRight, Sparkles, AlertTriangle, Zap, Check, X, Quote, Gift, Flame, Target, Scale } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -21,10 +22,9 @@ function Landing() {
       {/* NAV */}
       <header className="absolute top-0 left-0 right-0 z-30">
         <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
-          <div className="flex items-center gap-2 font-display text-xl font-bold text-brand-ink">
-            <Scale className="w-5 h-5 text-brand-emerald" />
-            Perícia<span className="text-brand-clay">.</span>Estratégica
-          </div>
+          <Link to="/" className="flex items-center gap-3">
+            <img src={logoAcelera} alt="Acelera Previdenciarista" className="h-10 md:h-12 w-auto rounded-md" />
+          </Link>
           <Button asChild className="bg-brand-ink hover:bg-brand-emerald rounded-full px-6">
             <a href="#cta">Quero participar</a>
           </Button>
