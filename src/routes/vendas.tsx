@@ -89,13 +89,13 @@ function Vendas() {
       {/* QUEBRA DE REALIDADE */}
       <section className="py-24 px-6 bg-secondary/30 border-y border-border">
         <div className="max-w-5xl mx-auto">
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center justify-center gap-3 mb-6">
             <AlertTriangle className="w-6 h-6 text-brand-gold" />
             <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-gold">
               Quebra de realidade
             </span>
           </div>
-          <h2 className="font-display text-3xl md:text-5xl text-foreground leading-tight mb-8">
+          <h2 className="font-display text-3xl md:text-5xl text-foreground leading-tight mb-8 text-center">
             A maioria dos advogados acredita que o problema está no perito. <br />
             <em className="text-brand-gold">Mas a verdade é outra.</em>
           </h2>
@@ -135,13 +135,13 @@ function Vendas() {
       <section className="py-24 px-6 bg-brand-ink text-brand-cream relative overflow-hidden">
         <div className="absolute top-10 right-10 w-64 h-64 rounded-full bg-brand-gold/10 blur-3xl" aria-hidden />
         <div className="max-w-6xl mx-auto relative">
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center justify-center gap-3 mb-6">
             <Flame className="w-6 h-6 text-brand-gold" />
             <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-gold">
               O que você vai aprender
             </span>
           </div>
-          <h2 className="font-display text-3xl md:text-5xl mb-12 max-w-4xl">
+          <h2 className="font-display text-3xl md:text-5xl mb-12 max-w-4xl mx-auto text-center">
             Tudo que faz a <em className="text-brand-gold">diferença real</em> entre concessão e negativa.
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -169,11 +169,13 @@ function Vendas() {
       {/* DIFERENCIAL */}
       <section className="py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-gold">Diferencial</span>
-          <h2 className="font-display text-3xl md:text-5xl mt-4 mb-12 text-foreground">
+          <div className="text-center">
+            <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-gold">Diferencial</span>
+            <h2 className="font-display text-3xl md:text-5xl mt-4 mb-12 text-foreground">
             Aqui você não vai ver teoria. <br />
             Você vai entender <em className="text-brand-gold">como funciona na prática</em>.
-          </h2>
+            </h2>
+          </div>
           <div className="grid md:grid-cols-3 gap-4">
             {[
               "Como isso acontece na prática",
@@ -292,13 +294,13 @@ function Vendas() {
       {/* PROVA SOCIAL */}
       <section className="py-24 px-6 bg-secondary/30 border-y border-border">
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center justify-center gap-3 mb-6">
             <Quote className="w-6 h-6 text-brand-gold" />
             <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-gold">
               Prova social
             </span>
           </div>
-          <h2 className="font-display text-3xl md:text-5xl mb-12 text-foreground">
+          <h2 className="font-display text-3xl md:text-5xl mb-12 text-foreground text-center">
             Depoimentos de advogados.
           </h2>
           <div className="grid md:grid-cols-2 gap-6">

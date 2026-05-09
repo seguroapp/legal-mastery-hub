@@ -75,11 +75,11 @@ function Landing() {
       {/* QUEBRA DE REALIDADE */}
       <section className="py-24 px-6 bg-secondary/30 border-y border-border">
         <div className="max-w-5xl mx-auto">
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center justify-center gap-3 mb-6">
             <AlertTriangle className="w-6 h-6 text-brand-clay" />
             <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-clay">Quebra de realidade</span>
           </div>
-          <h2 className="font-display text-3xl md:text-5xl text-foreground leading-tight mb-8">
+          <h2 className="font-display text-3xl md:text-5xl text-foreground leading-tight mb-8 text-center">
             A maioria dos advogados previdenciaristas acredita que o problema está no perito. <em className="text-brand-emerald">Mas a verdade é outra.</em>
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
@@ -95,7 +95,7 @@ function Landing() {
               </div>
             ))}
           </div>
-          <p className="mt-8 font-display text-2xl text-foreground">E o advogado… nem percebe onde errou.</p>
+          <p className="mt-8 font-display text-2xl text-foreground text-center">E o advogado… nem percebe onde errou.</p>
         </div>
       </section>
 
@@ -118,11 +118,11 @@ function Landing() {
       <section className="py-24 px-6 bg-brand-ink text-brand-cream relative overflow-hidden">
         <div className="absolute top-10 right-10 w-64 h-64 rounded-full bg-brand-gold/10 blur-3xl" aria-hidden />
         <div className="max-w-6xl mx-auto relative">
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center justify-center gap-3 mb-6">
             <Flame className="w-6 h-6 text-brand-gold" />
             <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-gold">O que você vai aprender</span>
           </div>
-          <h2 className="font-display text-3xl md:text-5xl mb-12 max-w-3xl">Tudo que muda o resultado da perícia — antes, durante e depois.</h2>
+          <h2 className="font-display text-3xl md:text-5xl mb-12 max-w-3xl mx-auto text-center">Tudo que muda o resultado da perícia — antes, durante e depois.</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {[
               "Como preparar seu cliente para a perícia médica",
@@ -144,20 +144,18 @@ function Landing() {
 
       {/* DIFERENCIAL */}
       <section className="py-24 px-6">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-[auto_1fr] gap-10 items-start">
-          <div className="w-20 h-20 rounded-2xl bg-brand-clay/10 flex items-center justify-center">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="w-20 h-20 rounded-2xl bg-brand-clay/10 flex items-center justify-center mx-auto mb-6">
             <Target className="w-9 h-9 text-brand-clay" />
           </div>
-          <div>
-            <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-clay">Diferencial</span>
-            <h2 className="font-display text-3xl md:text-5xl mt-3 mb-6 text-foreground">Aqui você não vai ver teoria.</h2>
-            <p className="text-lg text-muted-foreground mb-6">Você vai entender:</p>
-            <ul className="space-y-3 text-lg">
-              <li className="flex gap-3"><span className="text-brand-emerald">→</span> como isso acontece na prática</li>
-              <li className="flex gap-3"><span className="text-brand-emerald">→</span> como o advogado conduz o caso</li>
-              <li className="flex gap-3"><span className="text-brand-emerald">→</span> o que realmente influencia o resultado</li>
-            </ul>
-          </div>
+          <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-clay">Diferencial</span>
+          <h2 className="font-display text-3xl md:text-5xl mt-3 mb-6 text-foreground">Aqui você não vai ver teoria.</h2>
+          <p className="text-lg text-muted-foreground mb-6">Você vai entender:</p>
+          <ul className="space-y-3 text-lg inline-block text-left">
+            <li className="flex gap-3"><span className="text-brand-emerald">→</span> como isso acontece na prática</li>
+            <li className="flex gap-3"><span className="text-brand-emerald">→</span> como o advogado conduz o caso</li>
+            <li className="flex gap-3"><span className="text-brand-emerald">→</span> o que realmente influencia o resultado</li>
+          </ul>
         </div>
       </section>
 
@@ -204,11 +202,11 @@ function Landing() {
       {/* O QUE VOCÊ RECEBE */}
       <section className="py-24 px-6">
         <div className="max-w-5xl mx-auto">
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center justify-center gap-3 mb-6">
             <Gift className="w-6 h-6 text-brand-clay" />
             <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-clay">O que você recebe</span>
           </div>
-          <h2 className="font-display text-3xl md:text-5xl mb-12 text-foreground">Um encontro denso e direto ao ponto.</h2>
+          <h2 className="font-display text-3xl md:text-5xl mb-12 text-foreground text-center">Um encontro denso e direto ao ponto.</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {["Aula ao vivo", "Conteúdo técnico aplicado", "Estratégia prática", "Direcionamento claro"].map((t, i) => (
               <div key={t} className="rounded-2xl border border-border bg-card p-6">
@@ -223,7 +221,7 @@ function Landing() {
       {/* PROVA SOCIAL */}
       <section className="py-24 px-6 bg-secondary/30 border-y border-border">
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-center gap-3 mb-10">
+          <div className="flex items-center justify-center gap-3 mb-10">
             <Quote className="w-6 h-6 text-brand-emerald" />
             <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-emerald">Depoimentos</span>
           </div>
