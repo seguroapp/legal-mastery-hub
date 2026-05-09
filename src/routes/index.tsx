@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroImg from "@/assets/hero-mentoria.jpg";
+import heroImg from "@/assets/hero-mentoria.png";
 import logoAcelera from "@/assets/logo-acelera.jpeg";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, AlertTriangle, Zap, Check, X, Quote, Gift, Flame, Target, Scale } from "lucide-react";
