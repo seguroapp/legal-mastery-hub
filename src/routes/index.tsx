@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroImg from "@/assets/hero-mentoria.jpg";
+import heroImg from "@/assets/hero-mentoria.png";
 import logoAcelera from "@/assets/logo-acelera.jpeg";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, AlertTriangle, Zap, Check, X, Quote, Gift, Flame, Target, Scale } from "lucide-react";
@@ -38,11 +38,11 @@ function Landing() {
 
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative">
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-emerald/30 bg-brand-cream/60 backdrop-blur text-sm">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-emerald/30 bg-brand-gold/10 backdrop-blur text-sm">
               <Sparkles className="w-4 h-4 text-brand-clay" />
               <span className="font-mono text-xs uppercase tracking-widest">Encontro ao vivo · Vagas limitadas</span>
             </div>
-            <h1 className="font-display text-4xl md:text-6xl leading-[1.02] text-brand-ink">
+            <h1 className="font-display text-4xl md:text-6xl leading-[1.02] text-foreground">
               Se o seu cliente vai mal preparado para a perícia… <em className="text-brand-clay">você já perdeu o benefício</em> antes mesmo do resultado sair.
             </h1>
             <p className="text-lg text-muted-foreground max-w-xl leading-relaxed">
@@ -55,7 +55,7 @@ function Landing() {
                 </a>
               </Button>
               <div className="text-sm text-muted-foreground">
-                Apenas <span className="font-display text-brand-ink text-lg">R$ 59,90</span>
+                Apenas <span className="font-display text-foreground text-lg">R$ 59,90</span>
               </div>
             </div>
           </div>
@@ -79,7 +79,7 @@ function Landing() {
             <AlertTriangle className="w-6 h-6 text-brand-clay" />
             <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-clay">Quebra de realidade</span>
           </div>
-          <h2 className="font-display text-3xl md:text-5xl text-brand-ink leading-tight mb-8">
+          <h2 className="font-display text-3xl md:text-5xl text-foreground leading-tight mb-8">
             A maioria dos advogados previdenciaristas acredita que o problema está no perito. <em className="text-brand-emerald">Mas a verdade é outra.</em>
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
@@ -95,7 +95,7 @@ function Landing() {
               </div>
             ))}
           </div>
-          <p className="mt-8 font-display text-2xl text-brand-ink">E o advogado… nem percebe onde errou.</p>
+          <p className="mt-8 font-display text-2xl text-foreground">E o advogado… nem percebe onde errou.</p>
         </div>
       </section>
 
@@ -104,7 +104,7 @@ function Landing() {
         <div className="max-w-4xl mx-auto text-center">
           <Zap className="w-10 h-10 text-brand-gold mx-auto mb-6" />
           <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-clay">A virada</span>
-          <h2 className="font-display text-4xl md:text-6xl mt-4 leading-[1] text-brand-ink">
+          <h2 className="font-display text-4xl md:text-6xl mt-4 leading-[1] text-foreground">
             Perícia não é sorte. <br />
             Perícia é <em className="text-brand-emerald">estratégia</em>.
           </h2>
@@ -150,7 +150,7 @@ function Landing() {
           </div>
           <div>
             <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-clay">Diferencial</span>
-            <h2 className="font-display text-3xl md:text-5xl mt-3 mb-6 text-brand-ink">Aqui você não vai ver teoria.</h2>
+            <h2 className="font-display text-3xl md:text-5xl mt-3 mb-6 text-foreground">Aqui você não vai ver teoria.</h2>
             <p className="text-lg text-muted-foreground mb-6">Você vai entender:</p>
             <ul className="space-y-3 text-lg">
               <li className="flex gap-3"><span className="text-brand-emerald">→</span> como isso acontece na prática</li>
@@ -208,12 +208,12 @@ function Landing() {
             <Gift className="w-6 h-6 text-brand-clay" />
             <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-clay">O que você recebe</span>
           </div>
-          <h2 className="font-display text-3xl md:text-5xl mb-12 text-brand-ink">Um encontro denso e direto ao ponto.</h2>
+          <h2 className="font-display text-3xl md:text-5xl mb-12 text-foreground">Um encontro denso e direto ao ponto.</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {["Aula ao vivo", "Conteúdo técnico aplicado", "Estratégia prática", "Direcionamento claro"].map((t, i) => (
               <div key={t} className="rounded-2xl border border-border bg-card p-6">
                 <div className="font-mono text-xs text-brand-clay mb-3">0{i+1}</div>
-                <p className="font-display text-xl text-brand-ink">{t}</p>
+                <p className="font-display text-xl text-foreground">{t}</p>
               </div>
             ))}
           </div>
@@ -236,7 +236,7 @@ function Landing() {
             ].map((q, i) => (
               <div key={i} className="rounded-3xl bg-background border border-border p-8 shadow-[var(--shadow-soft)]">
                 <Quote className="w-8 h-8 text-brand-gold mb-4" />
-                <p className="font-display text-xl leading-snug text-brand-ink italic">"{q}"</p>
+                <p className="font-display text-xl leading-snug text-foreground italic">"{q}"</p>
               </div>
             ))}
           </div>
@@ -247,7 +247,7 @@ function Landing() {
       <section className="py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-clay">A escolha</span>
-          <h2 className="font-display text-3xl md:text-5xl mt-4 mb-10 text-brand-ink">Você pode continuar…</h2>
+          <h2 className="font-display text-3xl md:text-5xl mt-4 mb-10 text-foreground">Você pode continuar…</h2>
           <div className="grid md:grid-cols-2 gap-6 text-left">
             <div className="rounded-2xl border border-border p-6 bg-secondary/40">
               <X className="w-6 h-6 text-brand-clay mb-3" />
@@ -256,7 +256,7 @@ function Landing() {
             </div>
             <div className="rounded-2xl border border-brand-emerald p-6 bg-brand-emerald/5">
               <Check className="w-6 h-6 text-brand-emerald mb-3" />
-              <p className="text-brand-ink font-medium">Ou aprender como conduzir isso de forma estratégica.</p>
+              <p className="text-foreground font-medium">Ou aprender como conduzir isso de forma estratégica.</p>
             </div>
           </div>
         </div>
@@ -273,7 +273,7 @@ function Landing() {
           <p className="text-lg text-brand-cream/80 max-w-2xl mx-auto mb-10">
             Clique abaixo e veja todos os detalhes da inscrição.
           </p>
-          <Button asChild size="lg" className="bg-brand-gold hover:bg-brand-cream text-brand-ink rounded-full h-16 px-12 text-lg shadow-[var(--shadow-elegant)]">
+          <Button asChild size="lg" className="bg-brand-gold hover:bg-brand-cream text-foreground rounded-full h-16 px-12 text-lg shadow-[var(--shadow-elegant)]">
             <Link to="/vendas">
               Quero garantir minha vaga <ArrowRight className="ml-2 w-5 h-5" />
             </Link>

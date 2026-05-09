@@ -38,11 +38,11 @@ function Vendas() {
         <div className="absolute -top-20 -left-32 w-96 h-96 rounded-full bg-brand-gold/30 blur-3xl" aria-hidden />
         <div className="absolute top-40 -right-24 w-80 h-80 rounded-full bg-brand-emerald/20 blur-3xl" aria-hidden />
         <div className="max-w-5xl mx-auto relative text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-emerald/30 bg-brand-cream/60 backdrop-blur text-sm mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-emerald/30 bg-brand-gold/10 backdrop-blur text-sm mb-8">
             <Scale className="w-4 h-4 text-brand-clay" />
             <span className="font-mono text-xs uppercase tracking-widest">Clube Acelera Previdenciarista</span>
           </div>
-          <h1 className="font-display text-4xl md:text-7xl leading-[1] text-brand-ink">
+          <h1 className="font-display text-4xl md:text-7xl leading-[1] text-foreground">
             Você não precisa de mais teoria. <br />
             Você precisa <em className="text-brand-clay">aprender como os casos previdenciários</em> são resolvidos <span className="text-brand-emerald">na prática</span>.
           </h1>
@@ -64,7 +64,7 @@ function Vendas() {
             <AlertTriangle className="w-6 h-6 text-brand-clay" />
             <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-clay">Quebra de crença</span>
           </div>
-          <h2 className="font-display text-3xl md:text-5xl text-brand-ink leading-tight mb-8">
+          <h2 className="font-display text-3xl md:text-5xl text-foreground leading-tight mb-8">
             A maioria dos advogados previdenciaristas está <em className="text-brand-clay">travada</em> porque…
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
@@ -89,7 +89,7 @@ function Vendas() {
         <div className="max-w-4xl mx-auto text-center">
           <Zap className="w-10 h-10 text-brand-gold mx-auto mb-6" />
           <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-clay">A virada</span>
-          <h2 className="font-display text-3xl md:text-5xl mt-4 leading-tight text-brand-ink">
+          <h2 className="font-display text-3xl md:text-5xl mt-4 leading-tight text-foreground">
             O problema não é falta de conhecimento. <br />
             É falta de <em className="text-brand-emerald">visão prática</em> da advocacia previdenciária de verdade.
           </h2>
@@ -132,7 +132,7 @@ function Vendas() {
             <Calendar className="w-6 h-6 text-brand-clay" />
             <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-clay">Como funciona</span>
           </div>
-          <h2 className="font-display text-3xl md:text-5xl mb-12 text-brand-ink">Todos os meses, você tem acesso a:</h2>
+          <h2 className="font-display text-3xl md:text-5xl mb-12 text-foreground">Todos os meses, você tem acesso a:</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {[
               { n: "01", t: "2 encontros ao vivo" },
@@ -143,7 +143,7 @@ function Vendas() {
             ].map((it) => (
               <div key={it.n} className="rounded-2xl border border-border bg-card p-6">
                 <div className="font-mono text-xs text-brand-clay mb-3">{it.n}</div>
-                <p className="font-display text-lg text-brand-ink leading-snug">{it.t}</p>
+                <p className="font-display text-lg text-foreground leading-snug">{it.t}</p>
               </div>
             ))}
           </div>
@@ -157,7 +157,7 @@ function Vendas() {
             <BookOpen className="w-6 h-6 text-brand-emerald" />
             <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-emerald">Na prática você vai aprender</span>
           </div>
-          <h2 className="font-display text-3xl md:text-5xl mb-12 text-brand-ink">As habilidades que mudam o resultado dos seus casos.</h2>
+          <h2 className="font-display text-3xl md:text-5xl mb-12 text-foreground">As habilidades que mudam o resultado dos seus casos.</h2>
           <div className="grid md:grid-cols-2 gap-4">
             {[
               "Como orientar seu cliente para a perícia médica",
@@ -179,11 +179,11 @@ function Vendas() {
       <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-clay">Exemplos de tema</span>
-          <h2 className="font-display text-3xl md:text-5xl mt-4 mb-12 text-brand-ink">O nível dos encontros.</h2>
+          <h2 className="font-display text-3xl md:text-5xl mt-4 mb-12 text-foreground">O nível dos encontros.</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="rounded-3xl border border-brand-emerald/30 bg-brand-emerald/5 p-8">
               <div className="font-mono text-xs uppercase tracking-widest text-brand-emerald mb-3">Tema #01</div>
-              <h3 className="font-display text-3xl mb-6 text-brand-ink">Perícia Médica Previdenciária</h3>
+              <h3 className="font-display text-3xl mb-6 text-foreground">Perícia Médica Previdenciária</h3>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex gap-3"><Check className="w-5 h-5 text-brand-emerald shrink-0 mt-0.5" />Como orientar seu cliente corretamente</li>
                 <li className="flex gap-3"><Check className="w-5 h-5 text-brand-emerald shrink-0 mt-0.5" />O que falar (e o que não falar)</li>
@@ -193,7 +193,7 @@ function Vendas() {
             </div>
             <div className="rounded-3xl border border-brand-clay/30 bg-brand-clay/5 p-8">
               <div className="font-mono text-xs uppercase tracking-widest text-brand-clay mb-3">Tema #02</div>
-              <h3 className="font-display text-3xl mb-6 text-brand-ink">Auxílio-Acidente na Prática</h3>
+              <h3 className="font-display text-3xl mb-6 text-foreground">Auxílio-Acidente na Prática</h3>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex gap-3"><Check className="w-5 h-5 text-brand-clay shrink-0 mt-0.5" />Como identificar o direito</li>
                 <li className="flex gap-3"><Check className="w-5 h-5 text-brand-clay shrink-0 mt-0.5" />Como estruturar o caso</li>
@@ -247,7 +247,7 @@ function Vendas() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
             <span className="font-mono text-xs uppercase tracking-[0.32em] text-brand-clay">Como participar</span>
-            <h2 className="font-display text-4xl md:text-6xl mt-4 text-brand-ink">Escolha o seu acesso.</h2>
+            <h2 className="font-display text-4xl md:text-6xl mt-4 text-foreground">Escolha o seu acesso.</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -256,7 +256,7 @@ function Vendas() {
               <div className="font-mono text-xs uppercase tracking-widest text-brand-clay mb-3">Encontro avulso</div>
               <h3 className="font-display text-3xl mb-4">Participe do próximo encontro</h3>
               <p className="text-muted-foreground mb-8">Acesso a 1 encontro ao vivo, com tema técnico e aplicado.</p>
-              <div className="font-display text-5xl text-brand-ink mb-2">R$ 59,90</div>
+              <div className="font-display text-5xl text-foreground mb-2">R$ 59,90</div>
               <div className="font-mono text-xs text-muted-foreground uppercase tracking-widest mb-8">Pagamento único</div>
               <Button asChild size="lg" className="mt-auto bg-brand-ink hover:bg-brand-emerald rounded-full h-14 text-base">
                 <a href="#" aria-disabled>Quero o encontro avulso <ArrowRight className="ml-2 w-5 h-5" /></a>
@@ -265,7 +265,7 @@ function Vendas() {
 
             {/* CLUBE */}
             <div className="relative rounded-3xl p-10 flex flex-col text-brand-cream bg-brand-ink border-2 border-brand-gold shadow-[var(--shadow-elegant)]">
-              <div className="absolute -top-4 left-10 px-3 py-1 rounded-full bg-brand-gold text-brand-ink font-mono text-[10px] uppercase tracking-widest">Mais escolhido</div>
+              <div className="absolute -top-4 left-10 px-3 py-1 rounded-full bg-brand-gold text-foreground font-mono text-[10px] uppercase tracking-widest">Mais escolhido</div>
               <div className="font-mono text-xs uppercase tracking-widest text-brand-gold mb-3">Clube Acelera Previdenciarista</div>
               <h3 className="font-display text-3xl mb-4">Acesso contínuo, todo mês</h3>
               <ul className="space-y-3 mb-8 text-brand-cream/90">
@@ -278,7 +278,7 @@ function Vendas() {
               </ul>
               <div className="font-display text-5xl text-brand-gold mb-2">R$ 59,90<span className="text-xl text-brand-cream/70">/mês</span></div>
               <div className="font-mono text-xs text-brand-cream/60 uppercase tracking-widest mb-8">Cancelamento a qualquer momento</div>
-              <Button asChild size="lg" className="mt-auto bg-brand-gold hover:bg-brand-cream text-brand-ink rounded-full h-14 text-base">
+              <Button asChild size="lg" className="mt-auto bg-brand-gold hover:bg-brand-cream text-foreground rounded-full h-14 text-base">
                 <a href="#" aria-disabled>Quero entrar no Clube <ArrowRight className="ml-2 w-5 h-5" /></a>
               </Button>
             </div>
@@ -295,7 +295,7 @@ function Vendas() {
             Você pode continuar tentando aprender sozinho… <br />
             ou aprender direto com <em className="text-brand-gold">quem vive a prática todos os dias</em>.
           </h2>
-          <Button asChild size="lg" className="bg-brand-gold hover:bg-brand-cream text-brand-ink rounded-full h-16 px-12 text-lg shadow-[var(--shadow-elegant)]">
+          <Button asChild size="lg" className="bg-brand-gold hover:bg-brand-cream text-foreground rounded-full h-16 px-12 text-lg shadow-[var(--shadow-elegant)]">
             <a href="#planos">Quero entrar no Clube Acelera Previdenciarista <ArrowRight className="ml-2 w-5 h-5" /></a>
           </Button>
           <p className="mt-14 font-display text-2xl md:text-3xl italic text-brand-gold max-w-3xl mx-auto leading-snug">
