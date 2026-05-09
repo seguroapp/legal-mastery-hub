@@ -38,7 +38,7 @@ function Vendas() {
         <div className="absolute -top-20 -left-32 w-96 h-96 rounded-full bg-brand-gold/30 blur-3xl" aria-hidden />
         <div className="absolute top-40 -right-24 w-80 h-80 rounded-full bg-brand-emerald/20 blur-3xl" aria-hidden />
         <div className="max-w-5xl mx-auto relative text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-emerald/30 bg-brand-cream/60 backdrop-blur text-sm mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-emerald/30 bg-brand-gold/10 backdrop-blur text-sm mb-8">
             <Scale className="w-4 h-4 text-brand-clay" />
             <span className="font-mono text-xs uppercase tracking-widest">Clube Acelera Previdenciarista</span>
           </div>

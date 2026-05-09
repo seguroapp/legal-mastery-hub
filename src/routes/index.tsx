@@ -38,7 +38,7 @@ function Landing() {
 
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative">
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-emerald/30 bg-brand-cream/60 backdrop-blur text-sm">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-brand-emerald/30 bg-brand-gold/10 backdrop-blur text-sm">
               <Sparkles className="w-4 h-4 text-brand-clay" />
               <span className="font-mono text-xs uppercase tracking-widest">Encontro ao vivo · Vagas limitadas</span>
             </div>
